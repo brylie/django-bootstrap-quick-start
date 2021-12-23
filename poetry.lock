@@ -55,6 +55,21 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "crispy-bootstrap5"
+version = "0.6"
+description = "Bootstrap5 template pack for django-crispy-forms"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+django = ">=2.2"
+django-crispy-forms = ">=1.13.0"
+
+[package.extras]
+test = ["pytest", "pytest-django"]
+
+[[package]]
 name = "django"
 version = "4.0"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -70,6 +85,14 @@ tzdata = {version = "*", markers = "sys_platform == \"win32\""}
 [package.extras]
 argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
+
+[[package]]
+name = "django-crispy-forms"
+version = "1.13.0"
+description = "Best way to have Django DRY forms"
+category = "main"
+optional = false
+python-versions = ">=3.6"
 
 [[package]]
 name = "flake8"
@@ -185,7 +208,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "2062e19a8ff26e9735fe32ac5c55c3175626839f56c7172cc8bcd16ac40790c4"
+content-hash = "5f36b60f0cd63a0c246001730c879dfd7ce649ae07f40336ffbc31a0ced8c2fa"
 
 [metadata.files]
 asgiref = [
@@ -204,9 +227,17 @@ colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
+crispy-bootstrap5 = [
+    {file = "crispy-bootstrap5-0.6.tar.gz", hash = "sha256:e8c50daaf266d6127c7414f5669d5f2467b640d08b045ed9dd57e351d30609ae"},
+    {file = "crispy_bootstrap5-0.6-py3-none-any.whl", hash = "sha256:ca5d2afc2a5d1cf12b8d057886a81002cdf7793afcbe0ce006c2294069c1f387"},
+]
 django = [
     {file = "Django-4.0-py3-none-any.whl", hash = "sha256:59304646ebc6a77b9b6a59adc67d51ecb03c5e3d63ed1f14c909cdfda84e8010"},
     {file = "Django-4.0.tar.gz", hash = "sha256:d5a8a14da819a8b9237ee4d8c78dfe056ff6e8a7511987be627192225113ee75"},
+]
+django-crispy-forms = [
+    {file = "django-crispy-forms-1.13.0.tar.gz", hash = "sha256:4dc9e5263c91c5f51766806a050ca2ec5c349d34c5cd91fcca3a1a0363b5e29e"},
+    {file = "django_crispy_forms-1.13.0-py3-none-any.whl", hash = "sha256:9c49d29dd9e98dc2e6e3a8b02670d72deb6edf7bc616986ca412d72c306b36a0"},
 ]
 flake8 = [
     {file = "flake8-4.0.1-py2.py3-none-any.whl", hash = "sha256:479b1304f72536a55948cb40a32dce8bb0ffe3501e26eaf292c7e60eb5e0428d"},
