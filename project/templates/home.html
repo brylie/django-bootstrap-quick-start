@@ -3,11 +3,6 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-{% if user.is_authenticated %}
-    Hi {{ user.username }}
-{% else %}
-    <p>You are not logged in.</p>
-    <a href="{% url 'login' %}">Log in</a>
-    <a href="{% url 'signup' %}">Sign up</a>
-{% endif %}
+<h1>Welcome</h1>
+<p>Welcome to the Django4, Bootstrap 5 quick-start project.</p>
 {% endblock content %}
